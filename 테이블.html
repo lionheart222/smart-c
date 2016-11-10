@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title테이블</title>
+</head>
+<body>
+
+<!--
+table tr테이블줄 td테이블데이터 로 구성된 옛날 테이블
+ul과 li사이에는 div나 여타 다른 테그들이 들어오면 안돼
+테이블도 이러한 규칙이 있다.
+테이블은 뒤에 td를 닫지 않아도 된다그러나 닫는 편이 좋다.
+thead와  tfoot은 빠져도 된다
+tfoot의 자리는 thead의 아래
+colgroup=단일태그
+웹표준에서는 col width값 넣지 않는다  디자인????으로 한다.-->
+
+<!--세로형 테이블-->
+
+
+<table border="1" width="400">
+<caption>시간표</caption>
+<colgroup>
+ <col width="100"/>
+ <col width="150/">
+ <col width="150/">
+ <col width="50/">
+</colgroup>
+
+<thead>
+  <tr>
+    <!--콜스판은 옆으로 로우스판은 아래로 합치기-->
+
+    <td colspan="3">월</td>
+    <td>화</td>
+    <td>수</td>
+    <td>목</td>
+  </tr>
+</thead>
+  <tr>
+    <th>과일</th>
+    <td rowspan="2">사과</td>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>포도</td>
+  </tr>
+  <tr>
+    <td>사과</td>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>포도</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="1" width="400">
+
+<thead>
+  <tr>
+    <td>월</td>
+    <td>화</td>
+    <td>수</td>
+    <td>목</td>
+  </tr>
+</thead>
+<!--tbody는 한테이블당 하나-->
+<tfoot>
+  <td>  </td>
+  <td>  </td>
+  <td> 합계 </td>
+  <td>  100만원</td>
+</tfoot>
+
+<tbody>
+  <tr>
+    <td>사과</td>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>포도</td>
+  </tr>
+
+
+
+
+
+
+
+
+  <table border="1" width="4">
+    <thead>
+      <tr>
+        <th scope="col">title</th>
+        <th scope="col">title</th>
+        <th scope="col">title</th>
+        <th scope="col">title</th>
+      </tr>
+    </thead>
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+</table>
+</body>
+</html>
